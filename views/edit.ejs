@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Task</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="px-3 py-4 bg-zinc-950">
+      <div
+        class="main w-full rounded-md text-white p-10 min-h-screen px-3 py-4 bg-zinc-900"
+      >
+        <a class="text-blue-500 inline-block mb-5" href="/">Go back to Home</a>
+        <h1 class="text-3xl tracking-tighter mb-10">Edit Menu</h1>
+        <form action="/edit" method="post">
+          <input
+            class="block px-3 rounded-md mt-2 outline-none w-1/4 py-2 bg-zinc-800"
+            type="text"
+            placeholder="Previous Name"
+            name="previous"
+            value="<%= filename %>"
+          />
+          <input
+            class="block mt-2 px-3 rounded-md outline-none w-1/4 py-2 bg-zinc-800"
+            type="text"
+            placeholder="New name"
+            name="new"
+          />
+          <input
+            class="mt-2 cursor-pointer bg-yellow-400 text-black rounded-md p-2 border-1 border-transparent hover:bg-black hover:border-yellow-400 hover:text-yellow-400 transition duration-300"
+            type="submit"
+            value="Update"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

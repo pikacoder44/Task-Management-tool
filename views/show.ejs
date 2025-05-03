@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="px-3 py-4 bg-zinc-900">
+      <div
+        class="main w-full rounded-md text-white p-10 min-h-screen bg-zinc-800"
+      >
+        <a class="text-blue-500 inline-block mb-10" href="/">Go back to Home</a>
+        <h1 class="text-3xl tracking-tighter">
+          <%= filename.split(".txt").join("") %>
+        </h1>
+        <p class="text-xl mt-10"><%= filedata %></p>
+      </div>
+    </div>
+  </body>
+</html>
